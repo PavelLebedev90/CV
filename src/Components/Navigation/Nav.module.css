@@ -1,0 +1,46 @@
+.nav_content {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+}
+
+.nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 1%;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: 500ms;
+
+}
+
+
+
+.nav a:hover {
+
+    background-color: rgba(44, 0, 230, 0.57);
+    transition: 500ms;
+}
+
+.nav a:active {
+    background-color: rgba(188, 65, 222, 0.84);
+    transition: 100ms;
+}
+
+
+
+
+
+
+
+
+
+

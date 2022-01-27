@@ -1,0 +1,64 @@
+.contacts_wrapper{
+    background-color: rgba(12, 255, 4, 0.51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    border-bottom: 1px solid;
+}
+.contacts{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid;
+}
+.contacts_form input, textarea{
+    width: inherit;
+}
+.contacts_form{
+    display: flex;
+    width: 200px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.button{
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+    transition: 500ms;
+    background-color: rgba(0, 203, 230, 0.57);
+}
+
+
+.button:hover {
+
+    background-color: rgba(44, 0, 230, 0.57);
+    transition: 500ms;
+}
+
+.button:active {
+    background-color: rgba(188, 65, 222, 0.84);
+    transition: 100ms;
+}
+
