@@ -10,8 +10,9 @@ import Footer from './Components/Footer/Footer';
 
 
 function App() {
+
     return (
-        <div className="wrapper">
+            <div className='wrapper'>
                 <Header/>
                 <Main/>
                 <Scills/>

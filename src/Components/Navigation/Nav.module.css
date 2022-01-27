@@ -2,11 +2,15 @@
     display: flex;
     justify-content: flex-end;
 }
-
+@media screen and (max-width: 400px) {
+    .nav_content{
+      display: none;
+    }
+}
 .nav {
     display: flex;
     justify-content: space-between;
-    flex-basis: 50%;
+    /*flex-basis: 50%;*/
 }
 
 .nav a {
@@ -14,18 +18,19 @@
     text-decoration: none;
     color: inherit;
     display: inline-block;
-    padding: 1%;
+    margin-right: 20px;
     border-radius: 6px;
     cursor: pointer;
     user-select: none;
     transition: 500ms;
-
+    padding: 3px;
+}
+.nav a:last-child{
+    margin-right: 0;
 }
 
 
-
 .nav a:hover {
-
     background-color: rgba(44, 0, 230, 0.57);
     transition: 500ms;
 }
