@@ -4,7 +4,7 @@ import Scill from './Scill/Scill';
 
 const Scills = () => {
     return (
-        <div className={classes.scills_wrapper}>
+        <div className={classes.scills_wrapper}  id={'scill'}>
             <div className="content">
                 <div className={classes.scills}>
                     <div className={classes.scills_header}>

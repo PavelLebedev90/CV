@@ -5,7 +5,7 @@ import MyWork from './MyWork/MyWork';
 
 const MyWorks = () => {
     return (
-        <div className={classes.myWorks_wrapper}>
+        <div className={classes.myWorks_wrapper} id={'works'}>
             <div className="content">
                 <div className={classes.myWorks}>
                     <div className={classes.myWorks_header}>

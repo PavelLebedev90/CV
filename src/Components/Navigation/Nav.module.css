@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-end;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .nav_content{
       display: none;
     }
@@ -14,7 +14,7 @@
 }
 
 .nav a {
-    font-size: 18px;
+    font-size: 23px;
     text-decoration: none;
     color: inherit;
     display: inline-block;
@@ -23,7 +23,7 @@
     cursor: pointer;
     user-select: none;
     transition: 500ms;
-    padding: 3px;
+    padding: 6px;
 }
 .nav a:last-child{
     margin-right: 0;

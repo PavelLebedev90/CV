@@ -1,10 +1,11 @@
 .burger{
     display: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     .burger{
         display: block;
-
+        transition: 2s;
+        transition-duration: 2s;
     }
 }
 .btn{
@@ -15,8 +16,10 @@
     width: 25px;
     height: 20px;
     z-index: 100;
+    transition: 0.5s;
 }
 .btn:before{
+    transition: 0.5s;
     content: '';
     width: 25px;
     height: 3px;
@@ -27,16 +30,7 @@
     border-radius: 2px;
 }
 .btn:after{
-    content: '';
-    width: 25px;
-    height: 3px;
-    position: fixed;
-    top: 35px;
-    right: 40px;
-    background-color: black;
-    border-radius: 2px;
-}
-.btn span{
+    transition: 0.5s;
     content: '';
     width: 25px;
     height: 3px;
@@ -46,29 +40,67 @@
     background-color: black;
     border-radius: 2px;
 }
+.btn span{
+    transition: 0.5s;
+    content: '';
+    width: 25px;
+    height: 3px;
+    position: fixed;
+    top: 35px;
+    right: 40px;
+    background-color: black;
+    border-radius: 2px;
+}
+.btnOpen{
+    cursor: pointer;
+    position: absolute;
+    top:25px;
+    right: 40px;
+    width: 25px;
+    height: 20px;
+    z-index: 100;
+    transition: 0.5s;
+}
+.btnOpen:before{
+    transition: 0.5s;
+    content: '';
+    width: 25px;
+    height: 3px;
+    position: fixed;
+    top: 35px;
+    right: 40px;
+    background-color: black;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+.btnOpen:after{
+    transition: 0.5s;
+    content: '';
+    width: 25px;
+    height: 3px;
+    position: fixed;
+    top: 35px;
+    right: 40px;
+    background-color: black;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+.btnOpen span{
+display: none;
+}
 
 
 .dropWrapper{
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top:0;
     width: 100%;
     height: 300px;
     background-color: #61dafb;
     z-index: 10;
-    animation-duration: .5s;
-    animation-name: drop;
-
 }
-@keyframes drop {
-    0%{
 
-        transform: translateY(-300px);
-    }
-    100%{
 
-        transform: translateY(0);
-    }
-}
+
 
 .list{
     list-style: none;
@@ -101,6 +133,4 @@
     background-color: rgba(188, 65, 222, 0.84);
     transition: 100ms;
 }
-
-
 

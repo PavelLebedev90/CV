@@ -1,19 +1,13 @@
 .wrapper{
-/*  display: flex;*/
-/* flex-direction: column;*/
-/*justify-content: space-between;*/
-  width: 80%;
+  max-width: 1350px;
   height: 100%;
-  margin: 2% auto;
-  border: 1px solid;
-  border-radius: 10px;
-  overflow: hidden;
-  box-sizing: border-box;
+  margin: 0 auto;
+
 }
 
 
 .content{
-  flex-basis: 80%;
+  flex-basis: 90%;
   margin: 0 auto;
 }
 
@@ -22,11 +16,30 @@
 
 
 @media screen and (max-width: 700px) {
-  .wrapper {
-    width: 100%;
+
+  .content{
+    flex-basis: 95%;
     margin: 0 auto;
-    border-radius: 0;
-    border:0
   }
+}
+
+.item-enter{
+  opacity: 0;
+  transform: scale(0.9);
+}
+.item-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 500ms, transform 500ms;
 
 }
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 500ms, transform 500ms;
+
+}
+

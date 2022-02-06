@@ -5,7 +5,7 @@ import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 const Header = () => {
     return (
-        <div className={classes.header}>
+        <div className={classes.header} id={'header'}>
             <BurgerMenu/>
                 <Nav/>
         </div>
