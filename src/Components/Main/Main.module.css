@@ -8,28 +8,87 @@
 
 .description {
     text-align: center;
+    margin: 0 3px;
+    flex-basis: 50%;
+    z-index: 3;
+}
+.description h1{
+    font-size: 40px;
+}
+.description p{
+    line-height: 30px;
+    font-size: 20px;
+}
+.description span{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 20px;
+    color:#61dafb;
+    text-transform: uppercase;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
+
 }
 
 .main {
     flex-grow: 1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     border: 1px solid;
     flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
 }
 
 .ava {
-    height: 280px;
-    width: 280px;
-    border-radius: 140px;
-    border: 1px solid;
-    margin: 5px;
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    margin: 30px 3px;
+    overflow:hidden;
+    z-index: 3;
 }
 
 .ava img {
-    height: 280px;
-    width: 280px;
-    border-radius: 140px;
+    height: inherit;
+    width: inherit ;
     object-fit: cover;
+}
+.avaBG{
+    position: absolute;
+    background-color: #61dafb;
+    height: 200%;
+    width: 160%;
+    transform: rotate(
+            15deg
+    );
+    left: 50%;
+    top: 0;
+    z-index: 0;
+}
+
+@media screen and (max-width: 545px) {
+    .ava{
+        height: 280px;
+        width: 265px;
+        border-radius: 140px;
+        margin: 5px;
+        overflow:hidden
+    }
+    .avaBG{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width: 658px) {
+    .description {
+        text-align: center;
+        margin: 0 3px;
+        flex-basis: 100%;
+        z-index: 3;
+    }
 }
