@@ -1,5 +1,5 @@
 .scills_wrapper{
-    background-color: rgba(255, 250, 4, 0.51);
+    background-color: rgba(250,240,150,0.86);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,14 +11,34 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid;
+    border-radius: 4px;
     align-items: center;
+    background-color: rgba(250,240,200,0.86);
+    padding: 35px;
 }
 .scills_header{
     margin-bottom: 35px;
+    position: relative;
+    letter-spacing: 10px;
+    font-size: 25px;
+    font-weight: 600;
 }
 .scill{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    /*background-color: rgba(250,240,200,0.86);*/
 }
+
+.scills_header:after {
+    content: '';
+    width: 50%;
+    border: 2px solid rgba(255, 181, 16, 0.86);
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    transition: 500ms;
+}
+

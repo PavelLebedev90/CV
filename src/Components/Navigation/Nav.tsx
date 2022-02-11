@@ -9,16 +9,16 @@ const Nav = () => {
                 <div className={classes.nav}>
                     <Link to={'header'}
                           smooth={'easeInOutQuad'}
-                          duration={400}>Главная</Link>
+                          duration={400}>Home</Link>
                     <Link to={'scill'}
                           smooth={'easeInOutQuad'}
-                          duration={400}>Скиллы</Link>
+                          duration={400}>Scills</Link>
                     <Link to={'works'}
                           smooth={'easeInOutQuad'}
-                          duration={400}>Работы</Link>
+                          duration={400}>Experience</Link>
                     <Link to={'contacts'}
                           smooth={'easeInOutQuad'}
-                          duration={400}>Контакты</Link>
+                          duration={400}>Contacts</Link>
                 </div>
             </div>
         </div>

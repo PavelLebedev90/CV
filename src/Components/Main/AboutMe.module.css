@@ -1,0 +1,56 @@
+h1, h3{
+    margin: 5px;
+    padding: 0;
+}
+.closeModal {
+    cursor: pointer;
+    margin: 2px;
+}
+
+.closeModal:before {
+    transition: 0.5s;
+    content: '';
+    width: 25px;
+    height: 3px;
+    position: fixed;
+    top: 6%;
+    right: 6%;
+    background-color: white;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+}
+
+.closeModal:after {
+    transition: 0.5s;
+    content: '';
+    width: 25px;
+    height: 3px;
+    position: fixed;
+    top: 6%;
+    right: 6%;
+    background-color: white;
+    border-radius: 2px;
+    transform: rotate(45deg);
+}
+
+.about {
+
+}
+
+.header {
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+
+}
+.icon img{
+    object-fit: cover;
+}
+.icon p {
+    width: 50px;
+}

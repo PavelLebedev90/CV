@@ -1,43 +1,59 @@
 .main_wrapper {
-    background-color: rgba(255, 199, 211, 0.64);
+    /*background-color: rgba(255, 199, 211, 0.64);*/
+    /*background-color: rgba(46,116,255,0.19);*/
+    background-color: rgba(250,240,200,0.86);
     display: flex;
     align-items: center;
     padding: 60px 0;
-    border-bottom: 1px solid;
+    /*border-bottom: 1px solid;*/
 }
 
+/*.description {*/
+/*    text-align: center;*/
+/*    margin: 0 3px 50px;*/
+/*    flex-basis: 50%;*/
+/*    z-index: 3;*/
+/*}*/
+
 .description {
-    text-align: center;
-    margin: 0 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-basis: 50%;
     z-index: 3;
+    margin: 0 3px;
 }
-.description h1{
+
+.description h1 {
     font-size: 40px;
 }
-.description p{
+
+.description p {
     line-height: 30px;
     font-size: 20px;
 }
-.description span{
+
+.description span {
+    letter-spacing: 10px;
     font-weight: 900;
     font-size: 24px;
     line-height: 20px;
-    color:#61dafb;
+    color: rgba(250,240,160,0.86);
     text-transform: uppercase;
     text-shadow: 1px 0 1px #000,
     0 1px 1px #000,
     -1px 0 1px #000,
     0 -1px 1px #000;
-
 }
+
 
 .main {
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid;
+    /*border: 1px solid;*/
     flex-wrap: wrap;
     position: relative;
     overflow: hidden;
@@ -48,18 +64,20 @@
     width: 300px;
     border-radius: 30px;
     margin: 30px 3px;
-    overflow:hidden;
+    overflow: hidden;
     z-index: 3;
 }
 
 .ava img {
     height: inherit;
-    width: inherit ;
+    width: inherit;
     object-fit: cover;
 }
-.avaBG{
+
+.avaBG {
     position: absolute;
-    background-color: #61dafb;
+    /*background-color: #61dafb;*/
+    background-color: rgba(250,240,160,0.86);
     height: 200%;
     width: 160%;
     transform: rotate(
@@ -70,20 +88,72 @@
     z-index: 0;
 }
 
+
+
+.center {
+    width: 180px;
+    height: 60px;
+    position: relative;
+    margin: 6px;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid rgba(250,240,160,0.86);
+    outline: none;
+    transition: 0.5s ease-in-out;
+
+}
+
+
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: rgb(255 181 16 / 86%);
+    stroke-dasharray: 178 497;
+    stroke-dashoffset: 148;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 0.5s ease-in-out;
+    background-color: rgba(255, 181, 16, 0.86);
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow:none;
+}
+
+
 @media screen and (max-width: 545px) {
-    .ava{
+    .ava {
         height: 280px;
         width: 265px;
         border-radius: 140px;
         margin: 5px;
-        overflow:hidden
+        overflow: hidden
     }
-    .avaBG{
+
+    .avaBG {
         display: none;
     }
 
 
 }
+
 @media screen and (max-width: 658px) {
     .description {
         text-align: center;
