@@ -9,7 +9,7 @@ import {faGitAlt} from '@fortawesome/free-brands-svg-icons';
 
 const Scills = () => {
 
-    const icons = [faReact, faJs, faCss3, faHtml5, faGitAlt]
+
     const i = [
             {
                 icon: faReact,

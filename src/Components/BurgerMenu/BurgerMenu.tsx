@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import classes from './BurgerMenu.module.css'
-import {CSSTransition, TransitionGroup} from 'react-transition-group';
+import {CSSTransition, Transition, TransitionGroup} from 'react-transition-group';
 import {Link} from 'react-scroll';
 
 const BurgerMenu = () => {
@@ -13,12 +13,6 @@ const BurgerMenu = () => {
     const nodeRef = React.useRef(null)
     return (
         <div className={classes.burger}>
-            <TransitionGroup>
-                <CSSTransition
-                    timeout={500}
-                    classNames="btn"
-                    nodeRef={nodeRef}
-                >
                     {open?
                         <div className={classes.btnOpen} onClick={onClickHandler}>
                             <span> </span>
@@ -28,23 +22,23 @@ const BurgerMenu = () => {
                             <span> </span>
                         </div>
                     }
-
-                </CSSTransition>
-            </TransitionGroup>
-            <TransitionGroup>
-                {open
-                    ?
-                    <CSSTransition
-                        timeout={500}
-                        classNames="item"
-                        nodeRef={nodeRef}
-                    >
+                <CSSTransition
+                    in={open}
+                    timeout={{
+                        appear: 500,
+                        enter: 300,
+                        exit: 500,
+                    }}
+                    unmountOnExit
+                    onEnter={() => setOpen(true)}
+                    onExited={() => setOpen(false)}
+                    classNames="item"
+                    nodeRef={nodeRef}
+                >
+                    <div ref={nodeRef} className={classes.dropWrapper}>
                         <DropdownList setOpen={setOpen}/>
-                    </CSSTransition>
-                    : ''
-                }
-
-            </TransitionGroup>
+                    </div>
+                </CSSTransition>
         </div>
     );
 };
@@ -52,14 +46,11 @@ const BurgerMenu = () => {
 export default BurgerMenu;
 type DropdownListType = {
     setOpen: (open:boolean)=>void
+
 }
 const DropdownList = ({ setOpen }:DropdownListType) => {
 
     return (
-
-        <div
-            className={classes.dropWrapper}
-        >
             <ul className={classes.list}>
                 <li>
                     <Link to={'header'}
@@ -82,7 +73,6 @@ const DropdownList = ({ setOpen }:DropdownListType) => {
                          duration={400}><span onClick={()=>setOpen(false)}>Contacts</span></Link>
                 </li>
             </ul>
-         </div>
     )
 }
 

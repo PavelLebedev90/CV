@@ -63,7 +63,6 @@ function App() {
                         }}
 
             >
-
                 <AboutMe closing={closing}/>
             </ReactModal>
             <Header/>
