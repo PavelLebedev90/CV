@@ -14,10 +14,10 @@
     border-radius: 4px;
     align-items: center;
     background-color: rgba(250,240,200,0.86);
-    padding: 35px;
+    /*padding: 35px;*/
 }
 .scills_header{
-    margin-bottom: 35px;
+    margin: 35px 0;
     position: relative;
     letter-spacing: 10px;
     font-size: 25px;
@@ -26,8 +26,9 @@
 .scill{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    /*background-color: rgba(250,240,200,0.86);*/
+    padding: 10px;
 }
 
 .scills_header:after {

@@ -1,38 +1,68 @@
 import React from 'react';
 import classes from './Scills.module.css';
 import Scill from './Scill/Scill';
-import {faReact} from '@fortawesome/free-brands-svg-icons';
-import {faHtml5} from '@fortawesome/free-brands-svg-icons';
-import {faCss3} from '@fortawesome/free-brands-svg-icons';
-import {faJs} from '@fortawesome/free-brands-svg-icons';
-import {faGitAlt} from '@fortawesome/free-brands-svg-icons';
+import redux from '../../Icon/redux.svg';
+import react from '../../Icon/react.svg';
+import typeScript from '../../Icon/typescript.svg';
+import api from '../../Icon/api.svg';
+import html5 from '../../Icon/html5.svg';
+import scss from '../../Icon/scss.svg';
+import storybook from '../../Icon/storybook.svg';
+import git from '../../Icon/git.svg';
+import javaScript from '../../Icon/javascript.svg';
+import axios from '../../Icon/axios.svg';
 
 const Scills = () => {
 
 
-    const i = [
-            {
-                icon: faReact,
-                scill: 'REACT',
-                description: ''
-            },
-           {
-                icon: faJs,
-                scill: 'JS',
-                description: ''
-            },
-             {
-                icon: faCss3,
-                scill: 'CSS',
-                description: ''
-            },
+    const icon = [
         {
-            icon: faHtml5,
-            scill: 'HTML',
+            icon: react,
+            scill: 'React',
             description: ''
         },
         {
-            icon: faGitAlt,
+            icon: redux,
+            scill: 'Redux',
+            description: ''
+        },
+        {
+            icon: typeScript,
+            scill: 'TypeScript',
+            description: ''
+        },
+        {
+            icon: javaScript,
+            scill: 'JavaScript',
+            description: ''
+        },
+        {
+            icon: api,
+            scill: 'REST API',
+            description: ''
+        },
+        {
+            icon: axios,
+            scill: 'Axios',
+            description: ''
+        },
+        {
+            icon: html5,
+            scill: 'HTML/CSS',
+            description: ''
+        },
+        {
+            icon: scss,
+            scill: 'SCSS',
+            description: ''
+        },
+        {
+            icon: storybook,
+            scill: 'Unit \nTests\nStoryBook\nSnapshot',
+            description: ''
+        },
+        {
+            icon: git,
             scill: 'GIT',
             description: ''
         },
@@ -46,15 +76,10 @@ const Scills = () => {
                         My Scills
                     </div>
                     <div className={classes.scill}>
-                        {i.map((m, i) => {
-                            return <Scill key={i} icon={m.icon} scill={m.scill} description={m.description} />
+                        {icon.map((m, i) => {
+                            return <Scill key={i} icon={m.icon} scill={m.scill} description={m.description}/>
                         })}
-                        {/*<Scill/>*/}
-                        {/*<Scill/>*/}
-                        {/*<Scill/>*/}
-                        {/*<Scill/>*/}
-                        {/*<Scill/>*/}
-                        {/*<Scill/>*/}
+
                     </div>
                 </div>
             </div>

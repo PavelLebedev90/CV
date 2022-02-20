@@ -4,9 +4,9 @@ import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faReact} from '@fortawesome/free-brands-svg-icons';
 import {IconDefinition} from '@fortawesome/fontawesome-svg-core';
-
+import redux from './../../../Icon/redux.svg'
 type ScillType = {
-    icon: IconDefinition
+    icon: string
     scill: string
     description:string
 }
@@ -16,15 +16,10 @@ const Scill = (props:ScillType) => {
     return (
         <div className={classes.myScill}>
             <div className={classes.myScillIcon}>
-                    <FontAwesomeIcon icon={props.icon}
-                                     color={'rgba(255, 181, 16, 0.86)'}
-                                     size={'3x'}
-                                     style={{top: '50%', left: '50%', transform: 'translate(-50%, -50%)'}}
-                    />
-
+                    <img className={classes.icon} src={props.icon} alt={props.scill}/>
             </div>
             <div className={classes.myScillHeader}>
-                <h5>{props.scill}</h5>
+                {props.scill}
             </div>
             <div>
                 {props.description}

@@ -26,6 +26,7 @@
     "react-scroll": "^1.8.4",
     "react-transition-group": "^4.4.2",
     "typescript": "^4.4.2",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.0"
   },
   "homepage": "http://PavelLebedev90.github.io/CV",

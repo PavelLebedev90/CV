@@ -2,8 +2,7 @@
 .myScill {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /*background-color: rgba(145,219,255,0.64);*/
+    justify-content: space-around;
     background-color: white;
     align-items: center;
     border-radius: 4px;
@@ -11,20 +10,35 @@
     flex-wrap: wrap;
     margin: 10px;
     transition: 300ms;
-}
-.myScillIcon{
-    position: relative;
-    width: inherit;
-    height: 60px;
+    padding: 5px;
+    flex-grow: 1;
 }
 
-.myScillHeader{
-    letter-spacing: 5px;
+.myScillIcon {
+    flex-wrap: wrap;
+    height: 80px;
+    text-align: center;
+    margin: 4px 0;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+
+.myScillHeader {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 500;
+    letter-spacing: 3px;
+    flex-wrap: wrap;
     font-size: 20px;
 }
 
-.myScill:hover{
+.myScill:hover {
     box-shadow: 6px 7px 9px -3px rgba(34, 60, 80, 0.21);
     transform: scale(1.05, 1.05);
     transition: 300ms;
+
 }
