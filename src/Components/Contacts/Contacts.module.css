@@ -1,64 +1,86 @@
-.contacts_wrapper{
-    background-color: rgba(12, 255, 4, 0.51);
+.generalContainer {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    padding: 60px 0;
-    border-bottom: 1px solid;
-}
-.contacts{
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    border: 1px solid;
+    background-color: rgba(250,240,150,0.86);
+    padding: 30px 0;
 }
-.contacts_form input, textarea{
-    width: inherit;
+.header{
+    margin: 5px 0 35px;
+    position: relative;
+    letter-spacing: 10px;
+    font-size: 25px;
+    font-weight: 600;
 }
-.contacts_form{
+.header:after{
+    content: '';
+    width: 50%;
+    border: 2px solid rgba(255, 181, 16, 0.86);
+    background-color: rgba(255, 181, 16, 0.86);
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+    transition: 500ms;
+}
+.contentContainer {
     display: flex;
-    width: 200px;
-    height: 100px;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 4px;
+    width: 90vw;
+    max-width: 800px;
+    background-color: rgba(250,240,200,0.86);
+    padding: 20px;
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.separator {
+    display: block;
+    width: 2px;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 181, 16, 0.86);
+}
+.levelingBlock {
+    width: 100%;
+    margin: 15px 0;
 }
 
 
-button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
+@media (pointer:coarse) {
+    .contentContainer {
+        margin-bottom: 0;
+    }
+
 }
 
-.button{
-    font-size: 20px;
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    padding: 8px;
-    border-radius: 6px;
-    cursor: pointer;
-    user-select: none;
-    transition: 500ms;
-    background-color: rgba(0, 203, 230, 0.57);
+@media screen and (max-width: 900px) {
+    .contentContainer {
+        flex-direction: column;
+    }
+
+    .linksContainer {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .separator {
+        width: 50vw;
+        height: 2px;
+        margin: 35px 0;
+    }
 }
-
-
-.button:hover {
-
-    background-color: rgba(44, 0, 230, 0.57);
-    transition: 500ms;
-}
-
-.button:active {
-    background-color: rgba(188, 65, 222, 0.84);
-    transition: 100ms;
-}
-

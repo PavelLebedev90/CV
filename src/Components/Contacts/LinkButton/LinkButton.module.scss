@@ -1,0 +1,71 @@
+@import '/src/App';
+
+.linkButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    margin: 12px 0;
+    border: 2px solid rgba(255, 181, 16, 0.86);
+    border-radius: 100px;
+    background-color: #faf096;
+    transition: 300ms;
+
+    &Text {
+        color: black;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.1;
+        padding: 10px 69px 10px 19px;
+    }
+    &Icon {
+        position: absolute;
+        right: -1px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 55px;
+        font-size: 40px;
+        border-radius: 50%;
+        background-color: rgba(255, 181, 16, 0.86);
+        transition: 300ms;
+    }
+    &IconSmall {
+        font-size: 35px;
+    }
+}
+.svg{
+    width: 80%;
+}
+@media (pointer:fine) {
+    .linkButton:hover {
+        border: 2px solid rgba(255, 181, 16, 0.86);
+        box-shadow: 0 0 13px 1px rgba(255, 200, 16, 0.86);
+        text-shadow: 0 0 15px rgba(230, 230, 16, 0.86), 0 0 5px rgba(230, 255, 16, 0.86);
+        transition: 300ms;
+        .linkButtonIcon {
+            transition: 300ms;
+            background-color: rgba(255, 181, 16, 0.86);
+            text-shadow: 0 0 15px rgba(230, 230, 16, 0.86), 0 0 5px rgba(230, 255, 16, 0.86);
+        }
+    }
+    .linkButton:active {
+        box-shadow: 0 0 0 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .linkButton {
+        border: none;
+        margin: 6px;
+        &Text{
+            display: none;
+        }
+        &Icon {
+            position: relative;
+            right: 0;
+        }
+    }
+}

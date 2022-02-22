@@ -8,15 +8,13 @@ type AboutType = {
 const AboutMe = (props: AboutType) => {
     return (
         <div className={classes.about}>
-            <div className={classes.closeModal} onClick={props.closing}></div>
+            <div className={classes.closeModal} onClick={props.closing}>
+
+            </div>
             <div className={classes.header}>
                     <h1>LEBEDEV PAVEL</h1>
                     <h3>FRONT - END DEVELOPER</h3>
             </div>
-            {/*<div className={classes.icon}>*/}
-            {/*    <p><img src="https://img.icons8.com/color/48/000000/telegram-app--v1.png"/></p>*/}
-            {/*    <p><img src="https://img.icons8.com/plasticine/100/000000/github.png"/></p>*/}
-            {/*</div>*/}
             <div className={classes.content}>
                 <div>
                     <div>

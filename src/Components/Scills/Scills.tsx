@@ -11,6 +11,7 @@ import storybook from '../../Icon/storybook.svg';
 import git from '../../Icon/git.svg';
 import javaScript from '../../Icon/javascript.svg';
 import axios from '../../Icon/axios.svg';
+import materialui from '../../Icon/materialui.svg';
 
 const Scills = () => {
 
@@ -57,13 +58,18 @@ const Scills = () => {
             description: ''
         },
         {
-            icon: storybook,
-            scill: 'Unit \nTests\nStoryBook\nSnapshot',
+            icon: git,
+            scill: 'GIT',
             description: ''
         },
         {
-            icon: git,
-            scill: 'GIT',
+            icon: storybook,
+            scill: 'Unit Tests, StoryBook Snapshot, TDD',
+            description: ''
+        },
+        {
+            icon: materialui,
+            scill: 'Material-UI, Styled Components',
             description: ''
         },
     ]
@@ -73,7 +79,7 @@ const Scills = () => {
             <div className="content">
                 <div className={classes.scills}>
                     <div className={classes.scills_header}>
-                        My Scills
+                       Scills
                     </div>
                     <div className={classes.scill}>
                         {icon.map((m, i) => {

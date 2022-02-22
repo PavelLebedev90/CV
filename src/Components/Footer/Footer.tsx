@@ -6,9 +6,11 @@ const Footer = () => {
         <div className={classes.footer_wrapper}>
             <div className="content">
                 <div className={classes.footer}>
+                    <div className={classes.lineFooter}>
 
-                    <div>
-                       все права защищены
+                    </div>
+                    <div className={classes.footerText}>
+                        © 2022. All rights reserved
                     </div>
                 </div>
             </div>

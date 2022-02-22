@@ -3,18 +3,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 0;
-    border-bottom: 1px solid;
+    padding: 30px 0;
 }
 .scills{
-   /* height: 400px;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 4px;
     align-items: center;
     background-color: rgba(250,240,200,0.86);
-    /*padding: 35px;*/
+}
+.scill{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding: 10px;
 }
 .scills_header{
     margin: 35px 0;
@@ -23,18 +27,11 @@
     font-size: 25px;
     font-weight: 600;
 }
-.scill{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
 .scills_header:after {
     content: '';
     width: 50%;
     border: 2px solid rgba(255, 181, 16, 0.86);
+    background-color: rgba(255, 181, 16, 0.86);
     position: absolute;
     bottom: -50%;
     left: 50%;

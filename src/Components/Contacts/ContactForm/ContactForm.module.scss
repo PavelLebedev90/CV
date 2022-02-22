@@ -1,0 +1,152 @@
+@import '/src/App';
+
+.wrapperContainer {
+    width: 100%;
+    max-width: 60%;
+}
+
+.formContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.input {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+    padding: 11px 20px;
+    border-radius: 30px;
+    background-color: #faf096;
+    transition: .3s;
+    border: 2px solid transparent;
+
+    &:focus {
+        border: 2px solid rgba(255, 181, 16, 0.86);
+    }
+
+    &Left {
+        margin-right: 15px;
+    }
+
+    &Right {
+        margin-left: 15px;
+    }
+}
+
+.textarea {
+    font-size: 18px;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: #faf096;
+    transition: .3s;
+    border: 2px solid transparent;
+    resize: none;
+
+    &:focus {
+        border: 2px solid rgba(255, 181, 16, 0.86);
+    }
+}
+
+.sendButton {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.1;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #faf096;
+    border: 2px solid rgba(255, 181, 16, 0.86);
+    transition: 200ms;
+}
+
+.errorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorText {
+    position: absolute;
+    bottom: -55px;
+    color: rgba(255,140,85,0.98);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.afterFormText {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.1;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.miscContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.hidden {
+    display: none;
+}
+
+.formSubmittedText {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.1;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+@media (pointer:fine) {
+    .sendButton:hover {
+        border: 2px solid rgba(255, 181, 16, 0.86);
+        box-shadow: 0 0 13px 1px rgba(255, 200, 16, 0.86);
+        text-shadow: 0 0 15px rgba(230, 230, 16, 0.86), 0 0 5px rgba(190, 240, 16, 0.86);
+    }
+    .sendButton:active{
+        box-shadow: 0 0 0 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wrapperContainer {
+        max-width: 100%;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+
+    .input {
+        &Right {
+            margin-left: 0;
+        }
+        &Left {
+            margin-right: 0;
+        }
+    }
+
+    .miscContainer {
+        width: 100%;
+    }
+}

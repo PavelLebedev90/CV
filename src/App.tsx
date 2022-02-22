@@ -4,11 +4,11 @@ import Header from './Components/Header/Header';
 import Main from './Components/Main/Main';
 import Scills from './Components/Scills/Scills';
 import MyWorks from './Components/MyWorks/MyWorks';
-import Description from './Components/Description/Description';
-import Contacts from './Components/Contacts/Contacts';
 import Footer from './Components/Footer/Footer';
 import AboutMe from './Components/Main/AboutMe';
 import ReactModal from 'react-modal';
+import {Contacts} from './Components/Contacts/Contacts';
+
 
 
 ReactModal.setAppElement('#root')
@@ -69,7 +69,6 @@ function App() {
             <Main opening={opening}/>
             <Scills/>
             <MyWorks/>
-            <Description/>
             <Contacts/>
             <Footer/>
         </div>
