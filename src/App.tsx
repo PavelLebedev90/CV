@@ -34,7 +34,7 @@ function App() {
     return (
         <div className={`wrapper ${bodyClass}`}>
             <ReactModal isOpen={aboutMe}
-                        closeTimeoutMS={200}
+                        closeTimeoutMS={500}
                         preventScroll={true}
                         onRequestClose={onRequestClose}
                         style={{

@@ -4,6 +4,7 @@ import MyWork from './MyWork/MyWork';
 import todolist from './../../Photo/to-do-list.jpg'
 import socialNetwork from './../../Photo/images.jpg'
 import counter from './../../Photo/unnamed.png'
+import cards from './../../Photo/cards.png'
 
 const MyWorks = () => {
     return (
@@ -29,8 +30,12 @@ const MyWorks = () => {
                                 header={'Counter'}
                                 description={'Project for setting bounds and incrementing a number.Technologies: TypeScript, React, Redux, Local Storage'}
                         />
-                        {/*<MyWork/>*/}
-                        {/*<MyWork/>*/}
+                        <MyWork photo={cards}
+                                link={'https://pavellebedev90.github.io/cards'}
+                                header={'Cards'}
+                                description={'Сard learning project.Technologies: TypeScript, React, Redux, Modal window'}
+                        />
+
                     </div>
                 </div>
             </div>
