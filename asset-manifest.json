@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/CV/static/css/main.6dba2931.css",
-    "main.js": "/CV/static/js/main.9541ef3e.js",
+    "main.js": "/CV/static/js/main.e5d81627.js",
     "static/js/787.d3416ba8.chunk.js": "/CV/static/js/787.d3416ba8.chunk.js",
     "static/media/photoCV.jpg": "/CV/static/media/photoCV.e3c8e8623d5b3fc88285.jpg",
     "static/media/to-do-list.jpg": "/CV/static/media/to-do-list.2334781f5eb04b86aca0.jpg",
     "static/media/unnamed.png": "/CV/static/media/unnamed.277163a26eafc1805b11.png",
+    "static/media/cards.png": "/CV/static/media/cards.c07aae21c379136dc5c5.png",
     "static/media/react.svg": "/CV/static/media/react.c18eb95173cd08099d4545873da1989a.svg",
     "static/media/api.svg": "/CV/static/media/api.4f7cb631111b91c3935f5d18b2b25264.svg",
     "static/media/preloader.svg": "/CV/static/media/preloader.868b91c0d37cf9a06dafd9587dd9c8e6.svg",
@@ -22,11 +23,11 @@
     "static/media/telegram.svg": "/CV/static/media/telegram.7f65f411be99ae253c665ed38f011d56.svg",
     "static/media/materialui.svg": "/CV/static/media/materialui.8552656a9bd9a408347dfbbf4dd7792b.svg",
     "main.6dba2931.css.map": "/CV/static/css/main.6dba2931.css.map",
-    "main.9541ef3e.js.map": "/CV/static/js/main.9541ef3e.js.map",
+    "main.e5d81627.js.map": "/CV/static/js/main.e5d81627.js.map",
     "787.d3416ba8.chunk.js.map": "/CV/static/js/787.d3416ba8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6dba2931.css",
-    "static/js/main.9541ef3e.js"
+    "static/js/main.e5d81627.js"
   ]
 }
